@@ -1,0 +1,57 @@
+.HB {
+  background-image: url("homepic.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin:50px;
+  padding:0;
+  text-align:center;
+  margin-top: 200px;
+}
+
+h1 {
+  color: darkBLue;
+  font-size:50px;
+}
+h5{
+	font-family: georgia;
+	color: #221177;
+	position:absolute;
+    bottom:0;
+    right:0;
+}
+	
+
+.B{
+  background-color: darkOrange;
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0px 8px 20px gray;
+}
+.B span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.B span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.B:hover span {
+  padding-right: 25px;
+}
+
+.B:hover span:after {
+  opacity: 1;
+  right: 0;
+}
