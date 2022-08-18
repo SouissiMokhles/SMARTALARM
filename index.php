@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
   crossorigin=""/>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="./public/css/style.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </script>
   </head>
@@ -475,7 +475,7 @@ popupdk.openOn(map)}
 var north = L.control({position: "topright"});
 north.onAdd = function(map) {
     var div = L.DomUtil.create("div", "info legend");
-    div.innerHTML = '<img src="northarrow.png">';
+    div.innerHTML = '<img src="./public/images/northarrow.png">';
     return div;
 }
 north.addTo(map);
